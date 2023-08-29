@@ -16,9 +16,7 @@ const Login = () => {
         <div className="left">
           <h1>Facebak world</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-            alias totam numquam ipsa exercitationem dignissimos, error nam,
-            consequatur.
+Dive back into the thrilling world of facebak!Welcome back to all our passionate users!
           </p>
           <span>Don't you have an account?</span>
           <Link to="/register">

@@ -1,24 +1,25 @@
 .login {
-  height: 100vh;
-  background-color: rgb(193, 190, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #f6f5f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
 
   .card {
     width: 50%;
     display: flex;
     background-color: white;
     border-radius: 10px;
-    min-height: 600px;
+    max-width: 100%;
     overflow: hidden;
 
     .left {
       flex: 1;
-      background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
-        url("https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600")
-          center;
-      background-size: cover;
+      background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5));
+     
       padding: 50px;
       display: flex;
       flex-direction: column;
@@ -26,11 +27,16 @@
       color: white;
 
       h1 {
-        font-size: 100px;
-        line-height: 100px;
+        font-weight: bold;
+	margin: 0;
       }
       
       p {
+        font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
       }
 
       span {
@@ -64,6 +70,7 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        
         
         input {
         border: none;

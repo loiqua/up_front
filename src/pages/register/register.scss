@@ -1,9 +1,13 @@
 .register {
-  height: 100vh;
-  background-color: rgb(193, 190, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #f6f5f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+
 
   .card {
     width: 50%;
@@ -27,11 +31,18 @@
       color: white;
 
       h1 {
-        font-size: 100px;
-        line-height: 100px;
+        font-weight: bold;
+        font-size: 50px;
+	margin: 0;
+  text-align: center;
       }
       
       p {
+        font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 25px 0 43px;
       }
 
       span {
@@ -46,6 +57,7 @@
         color: rebeccapurple;
         font-weight: bold;
         cursor: pointer;
+       
       }
     }
 

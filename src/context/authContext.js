@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import profilimage from "./y.jpg";
 
 export const AuthContext = createContext();
 
@@ -11,15 +12,26 @@ export const AuthContextProvider = ({ children }) => {
     //TO DO
     setCurrentUser({
       id: 1,
-      name: "John Doe",
+      name: "Loic Andriamahaly",
       profilePic:
-        "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      <img src={profilimage} alt="" />
     });
   };
 
   useEffect(() => {
-    localStorage.setItem("user", JSON.stringify(currentUser));
-  }, [currentUser]);
+    // Chargez l'image lorsque le composant est monté.
+    const loadImage = () => {
+      const image = new Image();
+      image.src = profilimage;
+      image.onload = () => {
+        setCurrentUser({
+          ...currentUser,
+          profilePic: image,
+        });
+      };
+    };
+    loadImage();
+  }, []);
 
   return (
     <AuthContext.Provider value={{ currentUser, login }}>

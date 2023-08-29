@@ -6,11 +6,9 @@ const Register = () => {
     <div className="register">
       <div className="card">
         <div className="left">
-          <h1>Lama Social.</h1>
+          <h1>welcome to facebak world</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-            alias totam numquam ipsa exercitationem dignissimos, error nam,
-            consequatur.
+          welcome new user,i hope you will enjoy catching up with your friends on this beautiful social media platform
           </p>
           <span>Do you have an account?</span>
           <Link to="/login">
